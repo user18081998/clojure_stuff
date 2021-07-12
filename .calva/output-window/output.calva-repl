@@ -171,3 +171,528 @@ clojure.core/println
   Same as print followed by (newline)
 nil
 clj꞉user꞉> 
+#'user/booking
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.01.clj:6:1).
+; Unable to resolve symbol: bookings in this context
+clj꞉user꞉> 
+id : 1425 name : Bob Smith flight1 : [[48.9615 2.4372] [37.742 -25.6976]] flight2 : [[37.742 -25.6976] [48.9615 2.4372]] flight3 : nil
+nil
+clj꞉user꞉> 
+; Syntax error reading source at (REPL:7:1).
+; Unsupported character: \nflight3
+clj꞉user꞉> 
+id : 1425 
+name : Bob Smith 
+flight1 : [[48.9615 2.4372] [37.742 -25.6976]] 
+flight2 : [[37.742 -25.6976] [48.9615 2.4372]] 
+flight3 : nil
+nil
+clj꞉user꞉> 
+id : 1425 
+	name : Bob Smith 
+	flight1 : [[48.9615 2.4372] [37.742 -25.6976]] 
+	flight2 : [[37.742 -25.6976] [48.9615 2.4372]] 
+	flight3 : nil
+nil
+clj꞉user꞉> 
+id : 1425 
+	name : Bob Smith 
+	flight1 : [[48.9615 2.4372] [37.742 -25.6976]] 
+	flight2 : [[37.742 -25.6976] [48.9615 2.4372]] 
+	flight3 : nil
+nil
+clj꞉user꞉> 
+-------------------------
+clojure.core/conj
+([coll x] [coll x & xs])
+  conj[oin]. Returns a new collection with the xs
+    'added'. (conj nil item) returns (item).  The 'addition' may
+    happen at different 'places' depending on the concrete type.
+nil
+clj꞉user꞉> 
+[1 2 3 4]
+clj꞉user꞉> 
+; Execution error (ClassCastException) at user/eval3216 (REPL:13).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉user꞉> 
+[4 [1 2 3]]
+clj꞉user꞉> 
+[4 [1 2 3]]
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.01.clj:13:1).
+; Unable to resolve symbol: union in this context
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+[4 [1 2 3]]
+clj꞉user꞉> 
+2
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+2
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+2
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+2
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.01.clj:16:3).
+; Unable to resolve symbol: lat1 in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.01.clj:16:3).
+; Unable to resolve symbol: lat1 in this context
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] to lat2: [37.742 -25.6976] lon2:
+nil
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from 
+	lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] 
+to 
+	lat2: [37.742 -25.6976] lon2:
+nil
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from 
+	lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] 
+to 
+	lat2: [37.742 -25.6976] lon2: [48.9615 2.4372]
+nil
+clj꞉user꞉> 
+; Syntax error (ArityException) compiling count at (d:\Code\compilers\the clojure workshop\chap03\ex03.01.clj:15:3).
+; Wrong number of args (2) passed to: clojure.core/count--inliner--5521
+clj꞉user꞉> 
+([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from 
+	lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] 
+to 
+	lat2: [37.742 -25.6976] lon2: [48.9615 2.4372]
+nil
+clj꞉user꞉> 
+flights :
+	 ([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from 
+	lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] 
+to 
+	lat2: [37.742 -25.6976] lon2: [48.9615 2.4372]
+nil
+clj꞉user꞉> 
+flights :
+	 ([[48.9615 2.4372] [37.742 -25.6976]] [[37.742 -25.6976] [48.9615 2.4372]])
+flying from 
+	lat1 : [48.9615 2.4372] lon1:  [37.742 -25.6976] 
+to 
+	lat2: [37.742 -25.6976] lon2: [48.9615 2.4372]
+nil
+clj꞉user꞉> 
+#'user/booking
+clj꞉user꞉> 
+id : [1425 Bob Smith Allergic to unsalted peanuts only] 
+	name : [[48.9615 2.4372] [37.742 -25.6976]] 
+	flight1 : nil 
+	flight2 : nil 
+	flight3 : nil
+nil
+clj꞉user꞉> 
+#'user/booking
+clj꞉user꞉> 
+id : 1425 
+	name : Bob Smith 
+	flight1 : [[48.9615 2.4372] [37.742 -25.6976]] 
+	flight2 : [[37.742 -25.6976] [48.9615 2.4372]] 
+	flight3 : nil
+nil
+clj꞉user꞉> 
+id : 1425 
+	name : Bob Smith 
+	flight1 : [[48.9615 2.4372] [37.742 -25.6976]] 
+	flight2 : [[37.742 -25.6976] [48.9615 2.4372]] 
+	flight3 : nil
+nil
+clj꞉user꞉> 
+#'user/mapjet-booking
+clj꞉user꞉> 
+#'user/mapjet-booking
+clj꞉user꞉> 
+#'user/mapjet-booking
+clj꞉user꞉> 
+{:id 8773, :customer-name "Alice Smith", :catering-notes "Vegetarian on Sundays", :flights [{:from {:lat 48.9615, :lon 2.4372, :name "Paris Le Bourget Airport"}, :to {:lat 37.742, :lon -25.6976, :name "Ponta Delgada Airport"}} {:from {:lat 37.742, :lon -25.6976, :name "Ponta Delgada Airport"}, :to {:lat 48.9615, :lon 2.4372, :name "Paris Le Bourget Airport"}}]}
+clj꞉user꞉> 
+; Syntax error macroexpanding clojure.core/let at (d:\Code\compilers\the clojure workshop\chap03\ex03.02.clj:14:1).
+; :keys - failed: simple-symbol? at: [:bindings :form :local-symbol] spec: :clojure.core.specs.alpha/local-name
+:keys - failed: vector? at: [:bindings :form :seq-destructure] spec: :clojure.core.specs.alpha/seq-binding-form
+:keys - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-bindings
+:keys - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-special-binding
+clj꞉user꞉> 
+customer ' Alice Smith ' has 2 [{:from {:lat 48.9615, :lon 2.4372, :name Paris Le Bourget Airport}, :to {:lat 37.742, :lon -25.6976, :name Ponta Delgada Airport}} {:from {:lat 37.742, :lon -25.6976, :name Ponta Delgada Airport}, :to {:lat 48.9615, :lon 2.4372, :name Paris Le Bourget Airport}}] .
+nil
+clj꞉user꞉> 
+customer ' Alice Smith ' has 2 flights.
+nil
+clj꞉user꞉> 
+(defn map
+  "Returns a lazy sequence consisting of the result of applying f to
+  the set of first items of each coll, followed by applying f to the
+  set of second items in each coll, until any one of the colls is
+  exhausted.  Any remaining items in other colls are ignored. Function
+  f should accept number-of-colls arguments. Returns a transducer when
+  no collection is provided."
+  {:added "1.0"
+   :static true}
+  ([f]
+    (fn [rf]
+      (fn
+        ([] (rf))
+        ([result] (rf result))
+        ([result input]
+           (rf result (f input)))
+        ([result input & inputs]
+           (rf result (apply f input inputs))))))
+  ([f coll]
+   (lazy-seq
+    (when-let [s (seq coll)]
+      (if (chunked-seq? s)
+        (let [c (chunk-first s)
+              size (int (count c))
+              b (chunk-buffer size)]
+          (dotimes [i size]
+              (chunk-append b (f (.nth c i))))
+          (chunk-cons (chunk b) (map f (chunk-rest s))))
+        (cons (f (first s)) (map f (rest s)))))))
+  ([f c1 c2]
+   (l
+azy-seq
+    (let [s1 (seq c1) s2 (seq c2)]
+      (when (and s1 s2)
+        (cons (f (first s1) (first s2))
+              (map f (rest s1) (rest s2)))))))
+  ([f c1 c2 c3]
+   (lazy-seq
+    (let [s1 (seq c1) s2 (seq c2) s3 (seq c3)]
+      (when (and  s1 s2 s3)
+        (cons (f (first s1) (first s2) (first s3))
+              (map f (rest s1) (rest s2) (rest s3)))))))
+  ([f c1 c2 c3 & colls]
+   (let [step (fn step [cs]
+                 (lazy-seq
+                  (let [ss (map seq cs)]
+                    (when (every? identity ss)
+                      (cons (map first ss) (step (map rest ss)))))))]
+     (map #(apply f %) (step (conj colls c3 c2 c1))))))
+nil
+clj꞉user꞉> 
+
+cc
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\.calva\output-window\output.calva-repl:0:0).
+; Unable to resolve symbol: cc in this context
+clj꞉user꞉> 
+println "hi"
+"hi"
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.02.clj:30:36).
+; Unable to resolve symbol: weapon-fn-map in this context
+clj꞉user꞉> 
+#object[clojure.core$update 0xed1242b "clojure.core$update@ed1242b"]
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\ex03.02.clj:35:1).
+; Unable to resolve symbol: enemy in this context
+clj꞉user꞉> 
+#'user/enemy
+clj꞉user꞉> 
+; Execution error (IllegalStateException) at user/eval4777 (REPL:35).
+; Attempting to call unbound fn: #'user/strike
+clj꞉user꞉> 
+#'user/weapon-fn-map
+clj꞉user꞉> 
+#'user/strike
+clj꞉user꞉> 
+#'user/enemy
+clj꞉user꞉> 
+{:name "Arnold", :health 250}
+clj꞉user꞉> 
+{:name "Arnold", :health 250}
+clj꞉user꞉> 
+{:name "Arnold", :health 150}
+clj꞉user꞉> 
+{:name "Arnold", :health 11}
+clj꞉user꞉> 
+#'user/mighty-strike
+clj꞉user꞉> 
+{:name "Arnold", :health 70}
+clj꞉user꞉> 
+{:name "Arnold", :health 74}
+clj꞉user꞉> 
+{:name "Arnold", :health 56}
+clj꞉user꞉> 
+{:name "Arnold", :health 56}
+clj꞉user꞉> 
+{:name "Arnold", :health 30}
+clj꞉user꞉> 
+{:name "Arnold", :health 39}
+clj꞉user꞉> 
+{:name "Arnold", :health 31}
+clj꞉user꞉> 
+{:name "Arnold", :health 63}
+clj꞉user꞉> 
+{:name "Arnold", :health 43}
+clj꞉user꞉> 
+{:name "Arnold", :health 49}
+clj꞉user꞉> 
+{:name "Arnold", :health 32}
+clj꞉user꞉> 
+{:name "Arnold", :health 73}
+clj꞉user꞉> 
+{:name "Arnold", :health 42}
+clj꞉user꞉> 
+{:name "Arnold", :health 49}
+clj꞉user꞉> 
+{:name "Arnold", :health 41}
+clj꞉user꞉> 
+{:name "Arnold", :health 42}
+clj꞉user꞉> 
+{:name "Arnold", :health 47}
+clj꞉user꞉> 
+{:name "Arnold", :health 50}
+clj꞉user꞉> 
+{:name "Arnold", :health 53}
+clj꞉user꞉> 
+{:name "Arnold", :health 29}
+clj꞉user꞉> 
+{:name "Arnold", :health 43}
+clj꞉user꞉> 
+{:name "Arnold", :health 28}
+clj꞉user꞉> 
+{:name "Arnold", :health 63}
+clj꞉user꞉> 
+{:name "Arnold", :health 53}
+clj꞉user꞉> 
+{:name "Arnold", :health 49}
+clj꞉user꞉> 
+{:name "Arnold", :health 70}
+clj꞉user꞉> 
+{:name "Arnold", :health 57}
+clj꞉user꞉> 
+{:name "Arnold", :health 57}
+clj꞉user꞉> 
+{:name "Arnold", :health 75}
+clj꞉user꞉> 
+{:name "Arnold", :health 64}
+clj꞉user꞉> 
+{:name "Arnold", :health 43}
+clj꞉user꞉> 
+{:name "Arnold", :health 72}
+clj꞉user꞉> 
+{:name "Arnold", :health 60}
+clj꞉user꞉> 
+{:name "Arnold", :health 51}
+clj꞉user꞉> 
+{:name "Arnold", :health 40}
+clj꞉user꞉> 
+{:name "Arnold", :health 48}
+clj꞉user꞉> 
+{:name "Arnold", :health 73}
+clj꞉user꞉> 
+{:name "Arnold", :health 57}
+clj꞉user꞉> 
+-------------------------
+clojure.core/get
+([map key] [map key not-found])
+  Returns the value mapped to key, not-found or nil if key not present.
+nil
+clj꞉user꞉> 
+#'user/strike
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x6733893a "clojure.lang.MultiFn@6733893a"]
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x6733893a "clojure.lang.MultiFn@6733893a"]
+clj꞉user꞉> 
+100
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+; Execution error (ArityException) at user/eval5223 (REPL:57).
+; Wrong number of args (1) passed to: clojure.core/ns-unmap
+clj꞉user꞉> 
+; Execution error at user/eval5225 (REPL:57).
+; No namespace: user' found
+clj꞉user꞉> 
+; Execution error at user/eval5227 (REPL:57).
+; No namespace: user' found
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#'user/strike
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x5b1663e2 "clojure.lang.MultiFn@5b1663e2"]
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x5b1663e2 "clojure.lang.MultiFn@5b1663e2"]
+clj꞉user꞉> 
+100
+clj꞉user꞉> 
+#'user/player-lea
+clj꞉user꞉> 
+#'user/player-lea
+clj꞉user꞉> 
+#'user/player
+clj꞉user꞉> 
+#'user/player
+clj꞉user꞉> 
+#'user/move
+clj꞉user꞉> 
+:north
+clj꞉user꞉> 
+:north
+clj꞉user꞉> 
+:north
+clj꞉user꞉> 
+:north
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#'user/move
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x2a46b95c "clojure.lang.MultiFn@2a46b95c"]
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x2a46b95c "clojure.lang.MultiFn@2a46b95c"]
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x2a46b95c "clojure.lang.MultiFn@2a46b95c"]
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x2a46b95c "clojure.lang.MultiFn@2a46b95c"]
+clj꞉user꞉> 
+{:name "Lea", :health 200, :position {:x 10, :y 11, :facing :north}}
+clj꞉user꞉> 
+{:position {:x 11, :y 10, :facing :west}}
+clj꞉user꞉> 
+{:position {:x 10, :y 9, :facing :south}}
+clj꞉user꞉> 
+{:position {:x 9, :y 10, :facing :east}}
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x2a46b95c "clojure.lang.MultiFn@2a46b95c"]
+clj꞉user꞉> 
+{:position {:x 10, :y 10, :facing :penis}}
+clj꞉user꞉> 
+{:position {:x 10, :y 10, :facing "penis"}}
+clj꞉user꞉> 
+{:position {:x 10, :y 10, :facing :ifacenothingiamvoid}}
+clj꞉user꞉> 
+#'user/paris
+clj꞉user꞉> 
+#'user/bordeaux
+clj꞉user꞉> 
+#'user/distance
+clj꞉user꞉> 
+48.856483 2.352413
+nil
+clj꞉user꞉> 
+#'user/distance
+clj꞉user꞉> 
+nil nil
+nil
+clj꞉user꞉> 
+; Syntax error macroexpanding clojure.core/defn at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:9:1).
+; {:lat lat1, :lon lon2} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:lat lat1, :lon lon2}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉user꞉> 
+; Syntax error macroexpanding clojure.core/defn at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:9:1).
+; {:lat lat1, :lon lon1} - failed: vector? at: [:fn-tail :arity-n :bodies :params] spec: :clojure.core.specs.alpha/param-list
+({:lat lat1, :lon lon1}) - failed: Extra input at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+clj꞉user꞉> 
+nil nil
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+; Execution error (ArityException) at user/eval7344 (REPL:18).
+; Wrong number of args (2) passed to: user/distance
+clj꞉user꞉> 
+#'user/distance
+clj꞉user꞉> 
+18.434536219624384
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+#'user/distance
+clj꞉user꞉> 
+461.9108223212701
+clj꞉user꞉> 
+#'user/itinerary
+clj꞉user꞉> 
+-------------------------
+clojure.core/assoc
+([map key val] [map key val & kvs])
+  assoc[iate]. When applied to a map, returns a new map of the
+    same (hashed/sorted) type, that contains the mapping of key(s) to
+    val(s). When applied to a vector, returns a new vector that
+    contains val at index. Note - index must be <= (count vector).
+nil
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:26:18).
+; Unable to resolve symbol: walking-speed in this context
+clj꞉user꞉> 
+#'user/walking-speed
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x13bec28c "clojure.lang.MultiFn@13bec28c"]
+clj꞉user꞉> 
+{:distance 461.9108223212701, :cost 0, :duration 92.38216446425402}
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x13bec28c "clojure.lang.MultiFn@13bec28c"]
+clj꞉user꞉> 
+{:distance 461.9108223212701, :cost 0, :duration 92.38216446425402}
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:40:18).
+; Unable to resolve symbol: driving-speed in this context
+clj꞉user꞉> 
+#'user/calc-cost
+clj꞉user꞉> 
+#'user/dispatch-table-driving
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:40:18).
+; Unable to resolve symbol: driving-speed in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap03\act03.01.clj:40:18).
+; Unable to resolve symbol: driving-speed in this context
+clj꞉user꞉> 
+#'user/driving-speed
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x13bec28c "clojure.lang.MultiFn@13bec28c"]
+clj꞉user꞉> 
+; Execution error (NullPointerException) at user/eval8721$fn (REPL:41).
+; Cannot invoke "clojure.lang.IFn.invoke(Object)" because "vehicule" is null
+clj꞉user꞉> 
+#'user/veh
+clj꞉user꞉> 
+{:lat 48.856483, :lon 2.352413}
+nil
+clj꞉user꞉> 
+nil
+nil
+clj꞉user꞉> 
+#object[clojure.lang.MultiFn 0x13bec28c "clojure.lang.MultiFn@13bec28c"]
+clj꞉user꞉> 
+{:distance 461.9108223212701, :cost 48.50063634373336, :duration 6.598726033161001}
+clj꞉user꞉> 
+{:distance 461.9108223212701, :cost 48.50063634373336, :duration 6.598726033161001}
+clj꞉user꞉> 
