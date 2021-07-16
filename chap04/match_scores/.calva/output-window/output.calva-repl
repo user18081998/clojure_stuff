@@ -1,0 +1,189 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""0.8.3""},cider/cider-nrepl {:mvn/version,""0.26.0""}}}"  -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\ex05.01.clj:54:1).
+; Unable to resolve symbol: random-seq in this context
+clj꞉user꞉> 
+#'user/random-seq
+clj꞉user꞉> 
+#'user/random-seq
+clj꞉user꞉> 
+; Execution error (ArityException) at user/random-seq$fn (REPL:52).
+; Wrong number of args (0) passed to: clojure.core/rand-int
+clj꞉user꞉> 
+; Execution error (ArityException) at user/eval7187 (REPL:56).
+; Wrong number of args (0) passed to: clojure.core/rand-int
+clj꞉user꞉> 
+#'user/random-seq
+clj꞉user꞉> 
+[1477 6199 9156 1885 4786 3089]
+clj꞉user꞉> 
+[2502 2361 1423 7868 6166 4085]
+clj꞉user꞉> 
+[9879 6295 6607 8757 3700 4509]
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\ex05.01.clj:56:1).
+; Unable to resolve symbol: max-min in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\ex05.01.clj:47:1).
+; Unable to resolve symbol: max-min in this context
+clj꞉user꞉> 
+6
+clj꞉user꞉> 
+#'user/weather-days
+clj꞉user꞉> 
+35
+clj꞉user꞉> 
+{:max 35, :min 19, :description :sunny, :date "2019-09-28"}
+clj꞉user꞉> 
+#'user/max-min
+clj꞉user꞉> 
+{:minimum 1, :maximum 5}
+clj꞉user꞉> 
+[4457 8847 6800 177 3843 6850]
+clj꞉user꞉> 
+#'user/random-seq
+clj꞉user꞉> 
+{:minimum 30, :maximum 9912}
+clj꞉user꞉> 
+((2451 1865 2859))
+clj꞉user꞉> 
+((8067) (9656) (1339) (170) (8266))
+clj꞉user꞉> 
+((8398 4983) (2876 2750))
+clj꞉user꞉> 
+((1348 8860 2806) (1986 2828 5732) (4802 3974 5372))
+clj꞉user꞉> 
+#'user/s
+clj꞉user꞉> 
+#'user/s
+clj꞉user꞉> 
+[5308 4373 4576 9072 2073 9780 6370 6383 5226]
+clj꞉user꞉> 
+((5308 4373 4576) (9072 2073 9780) (6370 6383 5226))
+clj꞉user꞉> 
+[5308 4373 4576 9072 2073 9780 6370 6383 5226]
+clj꞉user꞉> 
+((5308 4373 4576) (9072 2073 9780) (6370 6383 5226))
+clj꞉user꞉> 
+#function[clojure.core/partition-all/fn--8558]
+clj꞉user꞉> 
+((5308 4373 4576) (9072 2073 9780) (6370 6383 5226))
+clj꞉user꞉> 
+((5308 4373 4576) (9072 2073 9780) (6370 6383 5226))
+clj꞉user꞉> 
+[5308 4373 4576 9072 2073 9780 6370 6383 5226]
+clj꞉user꞉> 
+((5308 4373) (4576 9072) (2073 9780) (6370 6383))
+clj꞉user꞉> 
+((5308 4373) (4576 9072) (2073 9780) (6370 6383) (5226))
+clj꞉user꞉> 
+[5308 4373 4576 9072 2073 9780 6370 6383 5226]
+clj꞉user꞉> 
+((5308) (4373 4576) (9072) (2073) (9780 6370 6383 5226))
+clj꞉user꞉> 
+((2073 4373 4576) (5226 5308 6370 6383 9072 9780))
+clj꞉user꞉> 
+#'user/partition-custom
+clj꞉user꞉> 
+{:segments [nil [2073] [4373] [4576] [5226] [5308] [6370] [6383] [9072]], :currents {}, :current [9780]}
+clj꞉user꞉> 
+#'user/partition-custom
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+#'user/partition-custom
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+#'user/partition-custom
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at user/partition-custom$fn (REPL:70).
+; Don't know how to create ISeq from: java.lang.Integer
+clj꞉user꞉> 
+#'user/partition-custom
+clj꞉user꞉> 
+{:segments [[] [2073] [4373] [4576] [5226] [5308] [6370] [6383] [9072]], :current [9780]}
+clj꞉user꞉> 
+{:segments [[4] [19] [4 9 5] [12 5 3] [4 1 1 9 5]], :current [18]}
+clj꞉user꞉> 
+{:segments [[4] [19] [4 9 5] [12 5 3] [4 1 1 9 5]], :current [18]}
+clj꞉user꞉> 
+#'user/distance-elevation
+clj꞉user꞉> 
+#'user/distance-elevation
+clj꞉user꞉> 
+(atom?)
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\.calva\output-window\output.calva-repl:144:1).
+; Unable to resolve symbol: atom? in this context
+clj꞉user꞉> 
+#'user/atom?
+clj꞉user꞉> 
+false
+clj꞉user꞉> 
+; Execution error (ClassCastException) at user/eval7347 (REPL:3).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉user꞉> 
+false
+clj꞉user꞉> 
+true
+clj꞉user꞉> 
+true
+clj꞉user꞉> 
+true
+clj꞉user꞉> 
+true
+clj꞉user꞉> 
+false
+clj꞉user꞉> 
+true
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: null? in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: doc in this context
+clj꞉user꞉> 
+#namespace[user]
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: doc in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: doc in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: docs in this context
+clj꞉user꞉> 
+; Syntax error compiling at (d:\Code\compilers\the clojure workshop\chap04\match_scores\chap05\little_schemer.clj:7:1).
+; Unable to resolve symbol: doc in this context
+clj꞉user꞉> 
+; nREPL Connection was closed
